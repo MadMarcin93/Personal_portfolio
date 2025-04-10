@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
+
+/* Table */
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+/* Course List */
+#courses_list {
+  list-style-type: none;
+  padding: 15px;
+}
+
+#courses_list li::before {
+  content: "- ";
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: rgb(255, 115, 0);
+}
+
+a:hover {
+  color: hotpink;
+}
+
+a:active {
+  color: blue;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  padding: 5px;
+}
+
+/* Head Section */
+.head {
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 90%;
+}
+
+.head p {
+  color: rgb(84, 82, 82);
+  font-size: 1rem;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  max-width: 100%;
+}
+
+/* Main Content */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 50px auto;
+  max-width: 90%;
+}
+
+/* Box Styling */
+.box {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Footer */
+.end,
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
